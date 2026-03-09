@@ -1,73 +1,99 @@
-# Welcome to your Lovable project
+# Gorantla Consultancy Services
 
-## Project info
+Official website for **Gorantla Consultancy Services**, designed to provide information about flexible career opportunities and allow interested candidates to connect directly via WhatsApp or application form.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Overview
 
-## How can I edit this code?
+This website highlights multiple career opportunities including roles such as telecallers, advisors, sales executives, managers, and other professional positions. It is designed to help individuals explore flexible earning opportunities and contact the advisor directly for more details.
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+* Modern responsive website design
+* Career opportunity listings
+* Direct WhatsApp contact integration
+* Application form for interested candidates
+* Mobile-friendly interface
+* SEO-optimized meta tags
+* Custom favicon and branding
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Technologies Used
 
-Changes made via Lovable will be committed automatically to this repo.
+* React
+* Vite
+* TypeScript
+* Tailwind CSS
+* HTML5
+* JavaScript
 
-**Use your preferred IDE**
+## Project Structure
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+```
+gorantlacservices
+│
+├── public
+│   ├── favicon.ico
+│   ├── favicon-16x16.png
+│   ├── favicon-32x32.png
+│   ├── apple-touch-icon.png
+│   └── site.webmanifest
+│
+├── src
+│   ├── components
+│   ├── pages
+│   └── main.tsx
+│
+├── index.html
+├── package.json
+└── vite.config.ts
+```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Installation
 
-Follow these steps:
+### 1. Clone the repository
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```
+git clone https://github.com/Sumasri05/gorantlacservices.git
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 2. Navigate to the project folder
 
-# Step 3: Install the necessary dependencies.
-npm i
+```
+cd gorantlacservices
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### 3. Install dependencies
+
+```
+npm install
+```
+
+### 4. Run the development server
+
+```
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### 5. Open in browser
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+http://localhost:5173
+```
 
-**Use GitHub Codespaces**
+## Deployment
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The website can be deployed using platforms such as:
 
-## What technologies are used for this project?
+* Netlify
+* Vercel
+* GitHub Pages
+* Any static hosting service
 
-This project is built with:
+## Contact
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+**Gorantla Consultancy Services**
 
-## How can I deploy this project?
+For more details about opportunities, please contact through the website or WhatsApp integration.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+© 2026 Gorantla Consultancy Services. All rights reserved.
