@@ -55,10 +55,9 @@ Occupation: ${form.occupation}`;
           <input required type="number" placeholder="Age" min={21} max={99} value={form.age} onChange={(e) => setForm({ ...form, age: e.target.value })} className={inputClass} />
           <button
             type="submit"
-            disabled={loading}
-            className="w-full gradient-gold text-secondary-foreground py-3.5 rounded-xl font-semibold text-base hover:opacity-90 transition-opacity disabled:opacity-50"
+            className="w-full gradient-gold text-secondary-foreground py-3.5 rounded-xl font-semibold text-base hover:opacity-90 transition-opacity"
           >
-            {loading ? "Submitting..." : "Apply Now"}
+            Apply Now
           </button>
         </motion.form>
       </div>
