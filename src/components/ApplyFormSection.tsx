@@ -1,11 +1,9 @@
 import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
 import { toast } from "sonner";
-import { supabase } from "@/integrations/supabase/client";
 
 const ApplyFormSection = () => {
   const [form, setForm] = useState({ name: "", phone: "", email: "", city: "", occupation: "", age: "" });
-  const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
