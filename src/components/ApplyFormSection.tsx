@@ -7,31 +7,24 @@ const ApplyFormSection = () => {
   const [form, setForm] = useState({ name: "", phone: "", email: "", city: "", occupation: "", age: "" });
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e: FormEvent) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    setLoading(true);
 
-    try {
-      const { data, error } = await supabase.functions.invoke("submit-application", {
-        body: {
-          name: form.name,
-          phone: form.phone,
-          email: form.email,
-          city: form.city,
-          age: form.age,
-          occupation: form.occupation,
-        },
-      });
+    const message = `New Consultant Application
 
-      if (error) throw error;
+Name: ${form.name}
+Phone: ${form.phone}
+Email: ${form.email}
+City: ${form.city}
+Age: ${form.age}
+Occupation: ${form.occupation}`;
 
-      toast.success(data?.message || "Application submitted successfully. Our advisor will contact you shortly.");
-      setForm({ name: "", phone: "", email: "", city: "", occupation: "", age: "" });
-    } catch {
-      toast.error("Failed to submit. Please try again.");
-    } finally {
-      setLoading(false);
-    }
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappURL = `https://wa.me/919346622469?text=${encodedMessage}`;
+    window.open(whatsappURL, "_blank");
+
+    toast.success("WhatsApp opened with your application details.");
+    setForm({ name: "", phone: "", email: "", city: "", occupation: "", age: "" });
   };
 
   const inputClass = "w-full px-4 py-3 rounded-lg bg-muted border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-secondary text-sm";
